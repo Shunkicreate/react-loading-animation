@@ -1,6 +1,7 @@
 import "./App.css";
 import Fireworks from "./components/Fireworks";
 import RotateAnimation from "./components/RotateAnimation";
+import CircleWithSatellites from "./components/CircleWithSatellites";
 
 function App() {
 	return (
@@ -9,6 +10,9 @@ function App() {
 				<RotateAnimation />
 				<RotateAnimation>
 					<Fireworks />
+				</RotateAnimation>
+				<RotateAnimation>
+					<CircleWithSatellites />
 				</RotateAnimation>
 			</main>
 		</div>

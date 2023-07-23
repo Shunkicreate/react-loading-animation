@@ -1,0 +1,64 @@
+:root {
+	--satellite-distance: 90px;
+	--main-color: #3498db;
+	--satellite-color: #6b9ec0;
+}
+
+.container {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 50px;
+}
+
+.circle {
+	position: absolute;
+	border-radius: 50%;
+}
+
+.main {
+    top: 50%;
+    left: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: var(--main-color);
+	transform: translate(-50%, -50%);
+}
+
+.satellite {
+    top:0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+	background-color: var(--satellite-color);
+    transform: translate(-50%, -50%);
+}
+
+/* 全体の角度を 360 度で割って、各衛星要素の角度を決定 */
+.s0 {
+	transform: translate(var(--satellite-distance), 0);
+}
+.s1 {
+	transform: rotate(45deg) translate(var(--satellite-distance));
+}
+.s2 {
+	transform: rotate(90deg) translate(var(--satellite-distance));
+}
+.s3 {
+	transform: rotate(135deg) translate(var(--satellite-distance));
+}
+.s4 {
+	transform: rotate(180deg) translate(var(--satellite-distance));
+}
+.s5 {
+	transform: rotate(225deg) translate(var(--satellite-distance));
+}
+.s6 {
+	transform: rotate(270deg) translate(var(--satellite-distance));
+}
+.s7 {
+	transform: rotate(315deg) translate(var(--satellite-distance));
+}
