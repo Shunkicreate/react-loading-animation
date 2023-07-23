@@ -1,0 +1,26 @@
+.spinner {
+	display: inline-block;
+	margin: 50px;
+	padding: 50px;
+	color: white;
+	animation: spinAndScale 2s infinite ease-in-out;
+}
+
+.innnerSpinner {
+	border-radius: 50%;
+	background: linear-gradient(#8c959b, #3498db);
+	padding: 50px;
+}
+
+@keyframes spinAndScale {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	50% {
+		transform: rotate(180deg) scale(1.5);
+	}
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
+}
+
