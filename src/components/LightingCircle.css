@@ -1,0 +1,6 @@
+.LightCircle {
+    position: relative;
+    margin: auto;
+	border-radius: 50%;
+	z-index: 1;
+}
